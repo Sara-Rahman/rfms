@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use 
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,6 @@ use
 Route::get('/', function () {
     return view('admin.master');
 });
+
+Route::get('/admin',[AdminController::class, 'Crisis']);
+Route::get('/donor',[AdminController::class,'Donation']);

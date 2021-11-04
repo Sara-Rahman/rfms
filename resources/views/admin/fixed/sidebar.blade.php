@@ -22,7 +22,7 @@
                 </li>
                 
                 <li>
-                    <a class="show-cat-btn" href="##">
+                    <a class="show-cat-btn" href="{{url('/admin')}}">
                         <span class="icon document" aria-hidden="true"></span>Admin
                         <!-- <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
@@ -39,8 +39,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Categories
+                    <a class="show-cat-btn" href="{{url('/donor')}}">
+                        <span class="icon folder" aria-hidden="true"></span>Donor
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                     <a class="show-cat-btn" href="##">
-                        <span class="icon image" aria-hidden="true"></span>Media
+                        <span class="icon image" aria-hidden="true"></span>Volunteer
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>

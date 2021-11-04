@@ -10,4 +10,8 @@ class AdminController extends Controller
     {
         return "Im  here";
     }
+    public function Donation()
+    {
+        return "Would you like to donate?";
+    }
 }
