@@ -22,7 +22,7 @@
                 </li>
                 
                 <li>
-                    <a class="show-cat-btn" href="{{url('/admin')}}">
+                    <a class="show-cat-btn" href="">
                         <span class="icon document" aria-hidden="true"></span>Admin
                         <!-- <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
@@ -31,10 +31,10 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="posts.html">All Posts</a>
+                            <a href="{{url('/admin')}}">Crisis</a>
                         </li>
                         <li>
-                            <a href="new-post.html">Add new post</a>
+                            <a href="new-post.html">Report</a>
                         </li>
                     </ul>
                 </li>
@@ -47,9 +47,13 @@
                         </span>
                     </a>
                     <ul class="cat-sub-menu">
-                        <li>
-                            <a href="categories.html">All categories</a>
+                    <li>
+                            <a href="{{url('/registration')}}">Donor Profile</a>
                         </li>
+                        <li>
+                            <a href="{{url('/donor')}}">Donation</a>
+                        </li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -62,10 +66,10 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="media-01.html">Media-01</a>
+                            <a href="{{url('/registration')}}">Volunteer Profile</a>
                         </li>
                         <li>
-                            <a href="media-02.html">Media-02</a>
+                            <a href="media-02.html">Distribution</a>
                         </li>
                     </ul>
                 </li>
@@ -146,7 +150,7 @@
             </span>
             <div class="sidebar-user-info">
                 <span class="sidebar-user__title">Shahida Rahman</span>
-                <span class="sidebar-user__subtitle">Support manager</span>
+                <span class="sidebar-user__subtitle">Admin</span>
             </div>
         </a>
     </div>

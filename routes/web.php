@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DonorController;
+use App\Http\Controllers\VolunteerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +17,11 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('admin.master');
+ return view('admin.master');
+    
 });
 
 Route::get('/admin',[AdminController::class, 'Crisis']);
 Route::get('/donor',[AdminController::class,'Donation']);
+Route::get('/registration',[DonorController::class, 'Registration']);
+Route::get('/registration',[VolunteerController::class,'Registration']);

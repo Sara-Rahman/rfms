@@ -26,7 +26,11 @@
 
 
   <div class="main-wrapper">
+
+
+   <!-- header -->
     <!-- ! Main nav -->
+
     <nav class="main-nav--bg">
   <div class="container main-nav">
     <div class="main-nav-start">
@@ -35,6 +39,9 @@
         <input type="text" placeholder="Enter keywords ..." required>
       </div>
     </div>
+
+   
+
     <div class="main-nav-end">
       <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
         <span class="sr-only">Toggle menu</span>
@@ -96,7 +103,7 @@
         <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
           <span class="sr-only">My profile</span>
           <span class="nav-user-img">
-            <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+            <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="public\images\pic1.jpg" alt="User name"></picture>
           </span>
         </button>
         <ul class="users-item-dropdown nav-user-dropdown dropdown">
@@ -122,7 +129,7 @@
       <div class="container">
         <h2 class="main-title">Dashboard</h2>
 
-
+@yield('content')
         
         <!-- <div class="row stat-cards">
           <div class="col-md-6 col-xl-3">
@@ -549,11 +556,11 @@
   </div>
 </div>
 <!-- Chart library -->
-<script src="./plugins/chart.min.js"></script>
+<script src="/js/chart.min.js"></script>
 <!-- Icons library -->
-<script src="plugins/feather.min.js"></script>
+<script src="/js/feather.min.js"></script>
 <!-- Custom scripts -->
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 
 </html>
