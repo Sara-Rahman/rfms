@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DonorController extends Controller
 {
-    public function Registration()
+    public function Donation()
     {
         return view('user.registration');
     }
