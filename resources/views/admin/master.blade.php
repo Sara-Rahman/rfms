@@ -23,13 +23,9 @@
 
 @include('admin.fixed.sidebar')
 
+@include('admin.fixed.header')
 
-
-  <div class="main-wrapper">
-
-
-   <!-- header -->
-    <!-- ! Main nav -->
+   <!-- <div class="main-wrapper">
 
     <nav class="main-nav--bg">
   <div class="container main-nav">
@@ -39,8 +35,6 @@
         <input type="text" placeholder="Enter keywords ..." required>
       </div>
     </div>
-
-   
 
     <div class="main-nav-end">
       <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
@@ -123,7 +117,8 @@
       </div>
     </div>
   </div>
-</nav>
+</nav>  -->
+
     <!-- ! Main -->
     <main class="main users chart-page" id="skip-target">
       <div class="container">

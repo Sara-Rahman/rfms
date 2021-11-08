@@ -1,3 +1,4 @@
+<div class="main-wrapper">
 <nav class="main-nav--bg">
   <div class="container main-nav">
     <div class="main-nav-start">
@@ -67,7 +68,7 @@
         <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
           <span class="sr-only">My profile</span>
           <span class="nav-user-img">
-            <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+            <picture><img src="/images/pic1.jpg" alt="User name"></picture>
           </span>
         </button>
         <ul class="users-item-dropdown nav-user-dropdown dropdown">
