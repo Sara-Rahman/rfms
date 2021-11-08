@@ -20,5 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/admin',[AdminController::class, 'Crisis']);
-Route::get('/donor',[AdminController::class,'Donation']);
-Route::get('/registration',[DonorController::class,'Registration']);
+Route::get('/registration',[DonorController::class,'Donation']);
+// Route::get('/registration',[DonorController::class,'Registration']);
