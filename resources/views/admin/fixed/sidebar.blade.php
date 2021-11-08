@@ -31,15 +31,16 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="posts.html">All Posts</a>
+                            <a href="posts.html">Crisis</a>
                         </li>
                         <li>
-                            <a href="new-post.html">Add new post</a>
+                            <a href="posts.html">Report</a>
                         </li>
+                       
                     </ul>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="{{url('/donor')}}">
+                    <a class="show-cat-btn" href="">
                         <span class="icon folder" aria-hidden="true"></span>Donor
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
@@ -48,8 +49,9 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="categories.html">All categories</a>
+                            <a href="{{url('/registration')}}">Donation</a>
                         </li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -62,10 +64,10 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="media-01.html">Media-01</a>
+                            <a href="{{url('/registration')}}">Join as a volunteer</a>
                         </li>
                         <li>
-                            <a href="media-02.html">Media-02</a>
+                            <a href="media-02.html">Distribution</a>
                         </li>
                     </ul>
                 </li>
@@ -146,7 +148,7 @@
             </span>
             <div class="sidebar-user-info">
                 <span class="sidebar-user__title">Shahida Rahman</span>
-                <span class="sidebar-user__subtitle">Support manager</span>
+                <span class="sidebar-user__subtitle">Admin</span>
             </div>
         </a>
     </div>
