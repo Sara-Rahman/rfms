@@ -71,11 +71,7 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-<<<<<<< HEAD
                             <a href="{{url('/registration')}}">Volunteer Profile</a>
-=======
-                            <a href="{{url('/registration')}}">Join as a volunteer</a>
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
                         </li>
                         <li>
                             <a href="media-02.html">Distribution</a>
