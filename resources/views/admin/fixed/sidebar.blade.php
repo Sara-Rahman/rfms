@@ -36,10 +36,11 @@
                         <li>
                             <a href="new-post.html">Report</a>
                         </li>
+                       
                     </ul>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="{{url('/donor')}}">
+                    <a class="show-cat-btn" href="">
                         <span class="icon folder" aria-hidden="true"></span>Donor
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
@@ -51,7 +52,11 @@
                             <a href="{{url('/registration')}}">Donor Profile</a>
                         </li>
                         <li>
+<<<<<<< HEAD
                             <a href="{{url('/donor')}}">Donation</a>
+=======
+                            <a href="{{url('/registration')}}">Donation</a>
+>>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
                         </li>
                         
                     </ul>
@@ -66,7 +71,11 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
+<<<<<<< HEAD
                             <a href="{{url('/registration')}}">Volunteer Profile</a>
+=======
+                            <a href="{{url('/registration')}}">Join as a volunteer</a>
+>>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
                         </li>
                         <li>
                             <a href="media-02.html">Distribution</a>
