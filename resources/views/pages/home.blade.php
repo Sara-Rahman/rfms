@@ -6,7 +6,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
-  background-image: url("pic2.png");
+  /* background-image: "/public/images/pic2.png";  */
+  
+  
 }
 
 * {
@@ -17,6 +19,16 @@ body {
 .container {
   padding: 271px;
   background-color: white;
+  background-image: url("public\images\pic2.png");
+
+
+}
+img{
+  max-width: 100%;
+    height: auto;
+  /* height: 500%;
+  width: 95%; */
+
 
 }
 
@@ -45,6 +57,8 @@ hr {
 .registerbtn {
   background-color: #04AA6D;
   border-radius: 10px;
+  font-size: 25px;
+
   color: #f1f1f1;
   padding: 17px 27px;
     margin: 12px 4px;
@@ -62,6 +76,10 @@ hr {
 a {
   color: dodgerblue;
 }
+/* img {
+height: 550%;
+width: 550px ;
+} */
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
@@ -78,10 +96,10 @@ a {
    
     
 
-   
+ 
 
     
-
+  <picture><img src="/images/pic2.png" alt="User name"></picture>
     <button type="submit" class="registerbtn">Admin</button>
     <button type="submit" class="registerbtn">Donor</button>
     <button type="submit" class="registerbtn">Volunteer</button>

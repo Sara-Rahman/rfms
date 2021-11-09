@@ -17,8 +17,8 @@ use App\Http\Controllers\DonorController;
 */
 
 Route::get('/', function () {
-// return view('pages.home');
-return view('admin.master');
+return view('pages.home');
+//return view('admin.master');
     
 });
 
