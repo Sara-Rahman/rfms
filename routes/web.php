@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DonorController;
-// use App\Http\Controllers\VolunteerController;
+ use App\Http\Controllers\VolunteerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +17,14 @@ use App\Http\Controllers\DonorController;
 */
 
 Route::get('/', function () {
+// return view('pages.home');
 return view('admin.master');
     
 });
 
-Route::get('/admin',[AdminController::class, 'Crisis']);
-Route::get('/registration',[DonorController::class,'Donation']);
-// Route::get('/registration',[DonorController::class,'Registration']);
+Route::get('/crisis',[AdminController::class, 'Crisis']);
+Route::get('/donor',[AdminController::class,'Donation']);
+Route::get('/registration',[DonorController::class,'Registration']);
+Route::get('/donation',[DonorController::class,'Donation']);
+Route::get('/registration2',[VolunteerController::class,'Registration']);
+Route::get('/distribution',[VolunteerController::class,'Distribution']);

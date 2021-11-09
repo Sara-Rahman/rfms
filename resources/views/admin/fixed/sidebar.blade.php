@@ -1,6 +1,11 @@
+<link rel="stylesheet" href="./css/style.min.css">
 <aside class="sidebar">
     <div class="sidebar-start">
         <div class="sidebar-head">
+            
+
+            <!-- @yield('navbar') -->
+
             <a href="/" class="logo-wrapper" title="Home">
                 <span class="sr-only">Home</span>
                 <span class="icon logo" aria-hidden="true"></span>
@@ -31,7 +36,7 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="{{url('/admin')}}">Crisis</a>
+                            <a href="{{url('/crisis')}}">Crisis</a>
                         </li>
                         <li>
                             <a href="new-post.html">Report</a>
@@ -52,11 +57,7 @@
                             <a href="{{url('/registration')}}">Donor Profile</a>
                         </li>
                         <li>
-<<<<<<< HEAD
-                            <a href="{{url('/donor')}}">Donation</a>
-=======
-                            <a href="{{url('/registration')}}">Donation</a>
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
+                            <a href="{{url('/donation')}}">Donation</a>
                         </li>
                         
                     </ul>
@@ -71,10 +72,10 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="{{url('/registration')}}">Volunteer Profile</a>
+                            <a href="{{url('/registration2')}}">Volunteer Profile</a>
                         </li>
                         <li>
-                            <a href="media-02.html">Distribution</a>
+                            <a href="{{url('/distribution')}}">Distribution</a>
                         </li>
                     </ul>
                 </li>

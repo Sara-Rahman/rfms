@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./css/style.min.css">
 <footer class="footer">
   <div class="container footer--flex">
     <div class="footer-start">

@@ -8,7 +8,8 @@ class AdminController extends Controller
 {
     public function Crisis()
     {
-        return "Im  here";
+        
+        return view('admin.crisis');
     }
     public function Donation()
     {

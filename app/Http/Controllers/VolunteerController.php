@@ -10,4 +10,9 @@ class VolunteerController extends Controller
     {
         return view('user.registration');
     }
+    public function Distribution()
+    {
+        return view('user.distribution');
+    }
+    
 }

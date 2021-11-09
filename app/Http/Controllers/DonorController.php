@@ -10,4 +10,9 @@ class DonorController extends Controller
      {
          return view('user.registration');
      }
+     public function Donation()
+     {
+         return view('admin.donation');
+     }
+     
 }

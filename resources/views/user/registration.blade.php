@@ -39,21 +39,13 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Overwrite default styles of hr */
 hr {
-<<<<<<< HEAD
   border: 1px solid #0B4C5F;
-=======
-  border: 1px solid #f1f1f1;
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
   margin-bottom: 25px;
 }
 
 /* Set a style for the submit button */
 .registerbtn {
-<<<<<<< HEAD
   background-color: #008080;
-=======
-  background-color: #04AA6D;
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -61,18 +53,12 @@ hr {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-<<<<<<< HEAD
   
-=======
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
 }
 
 .registerbtn:hover {
   opacity: 1;
-<<<<<<< HEAD
  
-=======
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
 }
 
 /* Add a blue text color to links */
@@ -95,12 +81,9 @@ a {
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-<<<<<<< HEAD
     <label for="name"><b>Full Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
 
-=======
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
@@ -112,11 +95,7 @@ a {
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-<<<<<<< HEAD
     <button type="submit" class="registerbtn"><a href="/"></a>Register</button>
-=======
-    <button type="submit" class="registerbtn">Register</button>
->>>>>>> 0603c27f1eb3e276bbc209f79386bb0e348db0a2
   </div>
   
   <div class="container signin">
