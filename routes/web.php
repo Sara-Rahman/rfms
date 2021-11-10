@@ -17,14 +17,17 @@ use App\Http\Controllers\DonorController;
 */
 
 Route::get('/', function () {
-return view('pages.home');
-//return view('admin.master');
+ return view('pages.home');
+ //return view('admin.master');
     
 });
 
 Route::get('/crisis',[AdminController::class, 'Crisis']);
 Route::get('/donor',[AdminController::class,'Donation']);
+Route::get('/adminLogin',[AdminController::class,'AdminLogin']);
+Route::get('/donorLogin',[DonorController::class,'DonorLogin']);
 Route::get('/registration',[DonorController::class,'Registration']);
 Route::get('/donation',[DonorController::class,'Donation']);
 Route::get('/registration2',[VolunteerController::class,'Registration']);
 Route::get('/distribution',[VolunteerController::class,'Distribution']);
+Route::get('/volunteerLogin',[VolunteerController::class,'VolunteerLogin']);

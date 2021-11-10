@@ -14,5 +14,9 @@ class VolunteerController extends Controller
     {
         return view('user.distribution');
     }
+    public function VolunteerLogin()
+     {
+         return view('volunteer.volunteerlogin');
+     }
     
 }

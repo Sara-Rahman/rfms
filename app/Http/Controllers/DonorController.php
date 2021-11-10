@@ -14,5 +14,8 @@ class DonorController extends Controller
      {
          return view('admin.donation');
      }
-     
+     public function DonorLogin()
+     {
+         return view('user.donorlogin');
+     }
 }

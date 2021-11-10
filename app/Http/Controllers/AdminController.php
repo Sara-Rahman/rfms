@@ -16,8 +16,8 @@ class AdminController extends Controller
         return "Would you like to donate?";
         
     }
-    //  public function Registration()
-    //  {
-    //      return view('admin.registration');
-    //  }
+    public function AdminLogin()
+    {
+        return view('admin.adminlogin');
+    }
 }

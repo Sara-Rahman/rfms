@@ -124,7 +124,7 @@
       <div class="container">
         <h2 class="main-title">Dashboard</h2>
 
-@yield('content')
+
         
         <!-- <div class="row stat-cards">
           <div class="col-md-6 col-xl-3">
@@ -438,7 +438,17 @@
               <p class="customers__date">28 Daily Avg.</p>
               <picture><source srcset="./img/svg/customers.svg" type="image/webp"><img src="./img/svg/customers.svg" alt=""></picture> -->
             </article>
-            <article class="white-block">
+
+
+
+
+
+
+
+
+{{-- MAIN CONTENT --}}
+
+            <!-- <article class="white-block">
               <div class="top-cat-title">
                 <h3>Top categories</h3>
                 <p>28 Categories, 1400 Posts</p>
@@ -529,7 +539,11 @@
           </div>
         </div> 
       </div>
-    </main>
+    </main> -->
+    @yield('content')
+
+
+
     <!-- ! Footer -->
     @include('admin.fixed.footer')
     <!-- <footer class="footer">
