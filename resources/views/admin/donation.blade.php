@@ -1,3 +1,4 @@
 
 
-@extends('admin.fixed.sidebar')
+{{-- @extends('admin.fixed.sidebar') --}}
+@extends('admin.master')

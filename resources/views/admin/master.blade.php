@@ -10,7 +10,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
   <!-- Custom styles -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="{{url('css/style.min.css')}}">
 </head>
 
 <body>
@@ -24,6 +24,9 @@
 @include('admin.fixed.sidebar')
 
 @include('admin.fixed.header')
+
+
+{{-- HEADER --}}
 
    <!-- <div class="main-wrapper">
 
@@ -120,9 +123,11 @@
 </nav>  -->
 
     <!-- ! Main -->
+    
     <main class="main users chart-page" id="skip-target">
       <div class="container">
-        <h2 class="main-title">Dashboard</h2>
+        {{-- <h2 class="main-title">Dashboard</h2> --}}
+      </div> 
 
 
         
@@ -540,10 +545,10 @@
         </div> 
       </div>
     </main> -->
+    
+
+
     @yield('content')
-
-
-
     <!-- ! Footer -->
     @include('admin.fixed.footer')
     <!-- <footer class="footer">

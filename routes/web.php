@@ -17,8 +17,8 @@ use App\Http\Controllers\DonorController;
 */
 
 Route::get('/', function () {
- return view('pages.home');
- //return view('admin.master');
+// return view('pages.home');
+ return view('admin.master');
     
 });
 
@@ -31,3 +31,5 @@ Route::get('/donation',[DonorController::class,'Donation']);
 Route::get('/registration2',[VolunteerController::class,'Registration']);
 Route::get('/distribution',[VolunteerController::class,'Distribution']);
 Route::get('/volunteerLogin',[VolunteerController::class,'VolunteerLogin']);
+Route::get('/create/crisis',[AdminController::class,'CreateCrisis']);
+Route::post('/crisis/store',[AdminController::class,'CrisisStore'])->name('crisis.store');

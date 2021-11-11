@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/style.min.css">
 <div class="main-wrapper">
 
-<nav class="main-nav--bg">
+
     <!-- ! Main nav -->
     <nav class="main-nav--bg">
 
@@ -94,4 +94,3 @@
     </div>
   </div>
 </nav>
-@yield('content')

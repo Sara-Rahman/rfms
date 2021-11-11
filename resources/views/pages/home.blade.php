@@ -60,10 +60,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 /* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
+
 
 /* Set a style for the submit button */
 .registerbtn {
@@ -80,7 +77,14 @@ hr {
     opacity: 0.9;
 }
 
-
+h1 {
+  display: block;
+    font-size: 44px;
+  
+    font-weight: bold; 
+    color: rgb(53, 117, 81);
+    text-align: center;
+}
 .registerbtn:hover {
   opacity: 1;
 }
@@ -108,15 +112,15 @@ max-width: 100%;
 <body>
 
 
-  <div class="container">
+  <div class="container">                                           
    
    
     
-
+<h1>Radiant Foundation</h1>
  
 
     
-  <picture><img src="/images/pic2.png" alt="User name"></picture>
+  <picture><img src="/images/pic2.png" alt="logo"></picture>
     <button type="submit" class="registerbtn"><a href="{{ url('/adminLogin') }}" style="text-decoration: none; color:white;">Admin</a></button>
     <button type="submit" class="registerbtn"><a href="{{ url('/donorLogin') }}" style="text-decoration: none; color:white;">Donor</a></button>
     <button type="submit" class="registerbtn"><a href="{{ url('/volunteerLogin') }}" style="text-decoration: none; color:white;">Volunteer</a></button>
