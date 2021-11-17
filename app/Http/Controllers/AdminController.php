@@ -10,8 +10,8 @@ class AdminController extends Controller
 {
     public function Crisis()
     {
-        
-        return view('admin.crisis');
+        $crisislist = Crisis::all();
+        return view('admin.crisis',compact('crisislist'));
     }
     public function Donation()
     {
@@ -28,13 +28,13 @@ class AdminController extends Controller
     }
     public function CrisisStore(Request $request)
     {
-        //dd($request->all());
+        //  dd($request->all());
         Crisis::create([
 
-
+            'id'=>$request->id,
             'name'=>$request->name,
             'type'=>$request->type,
-            'amount'=>$request->amount
+            'amount'=>$request->amount,
         
         ]);
         return redirect()->back();

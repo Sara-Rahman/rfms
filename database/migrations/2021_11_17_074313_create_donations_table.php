@@ -4,20 +4,22 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCrisesTable extends Migration
+class CreateDonationsTable extends Migration
 {
     /**
      * Run the migrations.
      *
-     * @return void 
+     * @return void
      */
     public function up()
     {
-        Schema::create('crises', function (Blueprint $table) {
+        Schema::create('donations', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('type');
-            $table->double('amount');
+            $table->string('dname');
+            $table->string('email');
+            $table->string('number');
+            $table->string('dtype');
+            $table->double('damount');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateCrisesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('crises');
+        Schema::dropIfExists('donations');
     }
 }

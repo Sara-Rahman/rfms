@@ -81,35 +81,40 @@ a {
 </head>
 <body>
 
-<form action=" {{route('crisis.store')}} " method="POST">
+<form action="#" method="POST">
     @csrf
   <div class="container">
-    <h1>Create Crisis</h1>
+    <h1>Donation Form</h1>
    
     <hr>
-    <label for="id"><b>Crisis ID</b></label>
-    <input type="number" placeholder="Enter Crisis ID" name="id" id="id" required><br><br>
+    
 
-    <label for="name"><b>Crisis Name</b></label>
-    <input type="text" placeholder="Enter Crisis Name" name="name" id="name" required>
+    <label for="dname"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Your Full Name" name="dname" id="dname" required>
 
-    <label for="type"><b>Crisis Type</b></label>
+    <label for="email"><b>Email Address</b></label>
+    <input type="text" placeholder="Enter Your Email" name="email" id="email" required>
+
+    <label for="phn-number"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Your Phone Number" name="number" id="number" required>
+
+    <label for="type"><b>Choose Crisis Type</b></label>
     {{-- <input type="text" placeholder="Enter Crsis Type" name="type" id="email" required> --}}
-    <select id="type" name="type">
+    <select id="type" name="dtype">
       <option value=""></option>
       <option value="food">Food</option>
       <option value="flood">Flood</option>
       <option value="health">Health</option>
     </select>
 <br><br>
-    <label for="amount"><b>Amount</b></label>
-    <input type="number" placeholder="Enter Amount" name="amount" id="amount" required>
+    <label for="amount"><b>Donation Amount</b></label>
+    <input type="dnumber" placeholder="Enter Amount" name="damount" id="damount" required>
 
     
 
     
 
-    <button type="submit" class="registerbtn"><a href="/"></a>Submit</button>
+    <button type="submit" class="registerbtn"><a href="/"></a>Donate</button>
   </div>
   
   

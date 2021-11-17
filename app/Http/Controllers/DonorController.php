@@ -18,4 +18,8 @@ class DonorController extends Controller
      {
          return view('user.donorlogin');
      }
+     public function CreateDonation()
+     {
+         return view('user.create-donation');
+     }
 }
