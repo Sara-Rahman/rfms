@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Donation;
 class DonorController extends Controller
 {
      public function Registration()
@@ -12,7 +12,8 @@ class DonorController extends Controller
      }
      public function Donation()
      {
-         return view('admin.donation');
+         $donationlist = Donation::all();
+         return view('admin.donation',compact('donationlist'));
      }
      public function DonorLogin()
      {
@@ -20,6 +21,32 @@ class DonorController extends Controller
      }
      public function CreateDonation()
      {
-         return view('user.create-donation');
+       // dd($request->all());
+        // Donation::create([
+            
+        //     'id'=>$request->id,
+        //     'donorname'=>$request->name,
+        //     'email'=>$request->name,
+        //     'number'=>$request->name,
+        //     'donortype'=>$request->type,
+        //     'donoramount'=>$request->amount,
+        
+        // ]);
+        return view('user.create-donation');
+     }
+     public function StoreDonation(Request $request)
+     {
+        // dd($request->all());
+        Donation::create([
+            
+            'id'=>$request->id,
+            'donorname'=>$request->donorname,
+            'email'=>$request->email,
+            'number'=>$request->number,
+            'donortype'=>$request->donortype,
+            'donoramount'=>$request->donoramount,
+        
+        ]);
+        return redirect()->back();
      }
 }

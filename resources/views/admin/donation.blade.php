@@ -45,12 +45,27 @@
     <thead>
       <tr>
         <th scope="col">Donor ID</th>
-        <th scope="col">Crisis Name</th>
+        <th scope="col">Donor Name</th>
+
+        <th scope="col">Donor Email</th>
         <th scope="col">Crisis Type</th>
         <th scope="col">Donation Amount</th>
 
        
       </tr>
-
-    </thead>  
+    </thead>
+ 
+      <tbody>
+        @foreach($donationlist as $donationitem)
+        <tr>
+          <th>{{$donationitem->id}}</th>
+          <td>{{$donationitem->donorname}}</td>
+          <td>{{$donationitem->email}}</td>
+          <td>{{$donationitem->donortype}}</td>
+          <td>{{$donationitem->donoramount}}</td>
+        </tr>
+        @endforeach
+       
+    </tbody>
+</table>
 @endsection

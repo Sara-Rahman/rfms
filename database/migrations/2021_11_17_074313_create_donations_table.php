@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreateDonationsTable extends Migration
 {
@@ -15,11 +16,11 @@ class CreateDonationsTable extends Migration
     {
         Schema::create('donations', function (Blueprint $table) {
             $table->id();
-            $table->string('dname');
+            $table->string('donorname');
             $table->string('email');
             $table->string('number');
-            $table->string('dtype');
-            $table->double('damount');
+            $table->string('donortype');
+            $table->double('donoramount');
             $table->timestamps();
         });
     }

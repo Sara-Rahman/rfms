@@ -28,7 +28,7 @@ class AdminController extends Controller
     }
     public function CrisisStore(Request $request)
     {
-        //  dd($request->all());
+        // dd($request->all());
         Crisis::create([
 
             'id'=>$request->id,
