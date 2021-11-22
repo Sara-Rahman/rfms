@@ -35,3 +35,4 @@ Route::get('/create/crisis',[AdminController::class,'CreateCrisis']);
 Route::post('/crisis/store',[AdminController::class,'CrisisStore'])->name('crisis.store');
 Route::get('/create/donation',[DonorController::class,'CreateDonation'])->name('create.donation');
 Route::post('/donation/store',[DonorController::class,'StoreDonation'])->name('donation.store');
+Route::get('/create/volunteer',[VolunteerController::class,'CreateVolunteer'])->name('create.volunteer');

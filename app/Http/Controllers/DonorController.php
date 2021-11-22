@@ -21,17 +21,7 @@ class DonorController extends Controller
      }
      public function CreateDonation()
      {
-       // dd($request->all());
-        // Donation::create([
-            
-        //     'id'=>$request->id,
-        //     'donorname'=>$request->name,
-        //     'email'=>$request->name,
-        //     'number'=>$request->name,
-        //     'donortype'=>$request->type,
-        //     'donoramount'=>$request->amount,
-        
-        // ]);
+       
         return view('user.create-donation');
      }
      public function StoreDonation(Request $request)

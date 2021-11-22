@@ -84,14 +84,28 @@ a {
 <form action="#" method="POST">
     @csrf
   <div class="container">
-    <h1>Create Crisis</h1>
+    <h1>Create Volunteer Account</h1>
    
     <hr>
-    <label for="id"><b>Crisis ID</b></label>
-    <input type="number" placeholder="Enter Crisis ID" name="id" id="id" required><br><br>
+    <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" id="name" required><br><br>
 
-    <label for="name"><b>Crisis Name</b></label>
-    <input type="text" placeholder="Enter Crisis Name" name="name" id="name" required>
+    <label for="email"><b>Email Address</b></label><br>
+    <input type="email" placeholder="Enter Email Address" name="email" id="email" required><br><br>
+    
+    <label for="phn_number"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phn_number" id="phn_number" required>
+
+    <label for="phn_number"><b>Address</b></label>
+    <input type="text" placeholder="Enter  Address" name="address" id="address" required>
+
+    <label>   
+        <b>Gender :  </b><br>
+        </label><br>  
+        <input type="radio" value="Male" name="gender" checked > Male   
+        <input type="radio" value="Female" name="gender"> Female   
+        <input type="radio" value="Other" name="gender"> Other  
+          <br><br>
 
     <label for="type"><b>Crisis Type</b></label>
     
