@@ -36,3 +36,4 @@ Route::post('/crisis/store',[AdminController::class,'CrisisStore'])->name('crisi
 Route::get('/create/donation',[DonorController::class,'CreateDonation'])->name('create.donation');
 Route::post('/donation/store',[DonorController::class,'StoreDonation'])->name('donation.store');
 Route::get('/create/volunteer',[VolunteerController::class,'CreateVolunteer'])->name('create.volunteer');
+Route::post('/volunteer/store',[VolunteerController::class,'StoreVolunteer'])->name('volunteer.store');

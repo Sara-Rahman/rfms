@@ -81,22 +81,39 @@ a {
 </head>
 <body>
 
-<form action="#" method="POST">
+<form action="{{route('volunteer.store')}}" method="POST">
     @csrf
   <div class="container">
     <h1>Create Volunteer Account</h1>
-   
-    <hr>
+
+   <hr>
+
+    @if(session()->has('success'))
+    <p class="alert alert-success">
+      {{session()->get('success')}}
+    </p>
+    @endif
+    <br>
+
     <label for="name"><b>Full Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="name" id="name" required><br><br>
 
     <label for="email"><b>Email Address</b></label><br>
     <input type="email" placeholder="Enter Email Address" name="email" id="email" required><br><br>
+
+    <label for="age"><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" name="age" id="age" required><br><br>
+
+    <label for="education"><b>Educational Background</b></label>
+    <input type="text" placeholder="Enter Educational Background" name="education" id="education" required><br><br>
+
+    <label for="education"><b>Occupation</b></label>
+    <input type="text" placeholder="Enter Occupation" name="occupation" id="occupation" required><br><br>
     
     <label for="phn_number"><b>Phone Number</b></label>
     <input type="text" placeholder="Enter Phone Number" name="phn_number" id="phn_number" required>
 
-    <label for="phn_number"><b>Address</b></label>
+    <label for="address"><b>Address</b></label>
     <input type="text" placeholder="Enter  Address" name="address" id="address" required>
 
     <label>   
@@ -107,23 +124,21 @@ a {
         <input type="radio" value="Other" name="gender"> Other  
           <br><br>
 
-    <label for="type"><b>Crisis Type</b></label>
+    <label for="crisis"><b>Choose Crisis </b></label>
+    <input type="text" placeholder="Enter Crisis" name="crisis" id="crisis" required>
     
-    <select id="type" name="type">
-      <option value="">Type</option>
-      <option value="food">Food</option>
-      <option value="flood">Flood</option>
-      <option value="health">Health</option>
-    </select>
+    
 <br><br>
-    <label for="amount"><b>Amount</b></label>
-    <input type="number" placeholder="Enter Amount" name="amount" id="amount" required>
-
+<label for="password"><b>Password </b></label>
+<input type="password" placeholder="Enter password" name="password" id="password" required>
     
 
     
 
-    <button type="submit" class="registerbtn"><a href="/"></a>Submit</button>
+    <button type="submit" class="registerbtn"><a href="/"></a>Register</button>
+  </div>
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
   
   

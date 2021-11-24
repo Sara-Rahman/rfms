@@ -87,6 +87,8 @@ a {
     <h1>Create Crisis</h1>
    
     <hr>
+@if(session()->has)
+
     <label for="id"><b>Crisis ID</b></label>
     <input type="number" placeholder="Enter Crisis ID" name="id" id="id" required><br><br>
 

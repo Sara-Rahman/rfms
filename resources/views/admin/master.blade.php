@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
   <!-- Custom styles -->
   <link rel="stylesheet" href="{{url('css/style.min.css')}}">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
